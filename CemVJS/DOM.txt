@@ -1,0 +1,49 @@
+Funções:
+# = nome da função
+
+function # (param){
+   blocodecodigo
+}
+
+
+DOM  (Document Object Model)
+
+Árvore DOM:
+
+	     window
+        /      |      \
+location   document   history
+               |
+              html
+           /        \
+       head            body
+        /\           /   |   \
+   meta   title    h1    p   div
+                         |
+                       strong
+
+Selecionando:
+  por Marca (selecionando elemento por tag html (<a> <p> <h1>...))
+	getElementsByTagName()
+  por ID
+	getElementsById()
+  por Nome
+	getElementsByName()
+  por Classe
+	getElementsByClassName()
+  por Seletor
+
+Eventos:
+  mouseenter
+  mouseout
+  mousemove
+  mousedown
+  mouseup
+  click
+  mouseout
+
+Listener: (Prepara eventos diretamente no JS)
+   #.addEventListener('evento', função)
+
+
+

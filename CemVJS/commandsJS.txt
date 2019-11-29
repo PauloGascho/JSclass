@@ -1,0 +1,96 @@
+Mensagem do navegador:
+  alert("Mensagem")
+
+Janela com digitador:
+  window.prompt("Texto da solicitação: ")
+
+-- VARIÁVEIS --
+
+Declarar variável:
+  var # = "valor"
+
+Mensagem com variáveis contatenadas:
+  alert(# + #)
+
+Mensagem da variável:
+  alert(#)
+
+Inserir valor da variável pelo navegador:
+  var # = window.prompt("Texto da solicitação: ")
+
+Convererter variável para numero:
+  Number(#)
+
+Convererter variável para string:
+  String(#)
+
+Inserir valor da variável e já converter para número:
+  var # = window.prompt(Number("Texto da solicitação: "))
+
+Mensagem com Template String ` # ` (facilitar contatenação):
+  alert(`Mensagem ${#} contatenada ${#}`)
+
+-- TRATANDO STRINGS --
+
+Retorna quantos caracteres de uma string:
+  #.length
+
+Altera uma string para letras 'MAIÚSCULAS':
+  #.toUpperCase()
+
+Altera uma string para letras 'minúsculas':
+  #.toLowerCase()
+
+Altera number para numero com duas casas após a , :
+  #.ToFixed(2)
+
+Altera number como o acima e troca . por , :
+  #.ToFixed(2).replace('.' , ',')
+
+Altera number para formato monetário real Brasil:
+  #.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})
+
+-- OPERADORES --
+
+Operadores aritméticos:
++   5 + 2  = 7
+-   5 - 2  = 3
+*   5 * 2  = 10
+/   5 / 2  = 2,5
+%   5 % 2  = 1  (Resto da divisão inteira)
+**  5 ** 2 = 25 (Potência)
+
+Operadores relacionais:
+< Menor que
+> Maior que
+<= Menor ou igual a
+>= Maior ou igual a
+== Igual a
+!= Diferente que
+
+Identidade:
+5 == 5     true
+5 == '5'   true
+5 === '5'  false
+
+Operadores lógicos:
+!   negação
+&&  conjunção
+||  disjunção
+
+Ordem de precedência:
+ |  ()
+ |  **
+ |  * / %
+ |  + -
+ |  > < >=
+ |  !
+ |  &&
+ |  ||
+ v
+
+Operador ternário:
+  ? :
+  teste ? true : false
+  Ex:
+  média >= 7.0 ? "Aprovado" : "Reprovado"
