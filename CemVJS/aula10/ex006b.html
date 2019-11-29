@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events DOM</title>
+    <style>
+        div {
+            font: normal 15pt Arial;
+            background-color: rgb(78, 126, 6);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id='area'>
+        Click Interaction...
+    </div>
+    <script>
+        
+        var area = window.document.getElementById('area')
+
+        area.addEventListener('click', clicker)
+        area.addEventListener('mouseenter', enterner)
+        area.addEventListener('mouseout', outner)
+
+        function clicker() {
+            area.innerText = "Has been clicked!"
+            area.style.background = "red"
+        }
+
+        function enterner(){
+            area.innerText = "Has been entered!"
+        }
+
+        function outner(){
+            area.innerText = "Has been out!"
+            area.style.background = "rgb(78, 126, 6)"
+        }
+
+    </script>
+</body>
+</html>

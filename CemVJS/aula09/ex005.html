@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First Steps with DOM</title>
+    <style>
+        body {
+            background: rgb(92, 169, 214);
+            color: white;
+            font: normal 12pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Initial DOM</h1>
+    <p>Here comes the result:</p>
+    <p>Learning <strong>DOM</strong> in JavaScript</p>
+    <div id ="msg">Click me!</div>
+    <script> //Start Script 
+
+        //atributing DOM select of <p> in var p1
+        var p1 = window.document.getElementsByTagName("p")[1]
+        
+    /*
+        //printing var p1
+        window.document.write("Is write: " + p1.innerText)
+        //alternate var color
+        p1.style.color = 'blue'
+
+        //atributing DOM select of <body> in var b1
+        var b1 = window.document.body
+        //alternate b1 background with DOM
+        b1.style.background = 'grey'
+
+        //atributing DOM select of <div> in var d1
+        var d1 = window.document.getElementById('msg')
+        //alternate d1 background to green
+        d1.style.background = 'green'
+        //alternating d1 text
+         //window.document.getElementById('msg').innerText = "Hello"
+        d1.innerText = "Waiting for..."
+    */
+
+    //atributing div with d1 var by Selector DOM
+    var d1 = window.document.querySelector('div#msg')
+    //alternating div background to blue
+    d1.style.background = "blue"
+
+    </script>
+</body>
+</html>
