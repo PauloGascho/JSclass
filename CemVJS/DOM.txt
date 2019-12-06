@@ -44,6 +44,3 @@ Eventos:
 
 Listener: (Prepara eventos diretamente no JS)
    #.addEventListener('evento', função)
-
-
-
