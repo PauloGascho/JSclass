@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Age verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Age verification</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Birth Year:
+                <input type="number" name="txtyear" id="txtyear" min="0">
+            </p>
+            <p>Gender:
+                <input type="radio" name="radgen" id="masc" checked>
+                <label for="masc">Masculine</label>
+                <input type="radio" name="radgen" id="fem">
+                <label for="fem">Feminine</label>
+            </p>
+            <p>
+                <input type="button" value="verify" onclick="verify()">
+            </p>
+        </div>
+        <div id="res"></div>
+    </section>
+
+    <footer>
+        <p>&copy; PauloGascho</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
