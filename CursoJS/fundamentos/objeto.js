@@ -18,9 +18,11 @@ const prod2 = {
 }
 
 //é possível aninhar objetos
-const obj1 {
-    atributo: 
+const obj1 = {
+    atributo: 'um atributo',
     obj2: {
-        atributo: 'um atributo',
+        atributo: 'outro atributo',
     }
 }
+
+//é possível gerar um json a partir de um objeto
