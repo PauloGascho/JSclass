@@ -9,7 +9,7 @@ console.log(filho.attr0, filho.attr1, filho.attr2, filho.attr3)
 const carro = {
     velAtual: 8,
     velMax: 200,
-    aceleraMaus(delta) {
+    aceleraMais(delta) {
         if (this.velAtual + delta <= this.velMax) {
             this.velAtual += delta
         } else {
@@ -39,8 +39,8 @@ Object.setPrototypeOf(volvo, carro)
 console.log(ferrari)
 console.log(volvo)
 
-volvo.aceleraMaus(100)
+volvo.aceleraMais(100)
 console.log(volvo.status())
 
-ferrari.aceleraMaus(300)
+ferrari.aceleraMais(300)
 console.log(ferrari.status())
