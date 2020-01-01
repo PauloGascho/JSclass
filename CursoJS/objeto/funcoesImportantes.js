@@ -4,18 +4,18 @@ const pessoa = {
     peso: 13
 }
 
-console.log(Object.keys(pessoa))
-console.log(Object.values(pessoa))
-console.log(Object.entries(pessoa))
+console.log(Object.keys(pessoa)) // retorna as chaves do objeto
+console.log(Object.values(pessoa)) // retorna os valores do objeto
+console.log(Object.entries(pessoa)) // retorna os registros (chave e valor) do objeto
 
 Object.entries(pessoa).forEach(([chave, valor]) => {
     console.log(`${chave}: ${valor}`)
 })
 
 Object.defineProperty(pessoa, 'dataNascimento', {
-    enumerable: true,
-    writable: false,
-    value: '01/01/2019'
+    enumerable: true, // propriedade pode ser listada
+    writable: false, // propriedade pode ser modificada
+    value: '01/01/2019' // atribuindo valor para a variável dataNascimento
 })
 
 pessoa.dataNascimento = '01/01/2017'
