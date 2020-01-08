@@ -1,3 +1,8 @@
+/* 
+npm init -y   <- -y para preencher todas as perguntas do wizard
+npm install
+*/
+
 const url = 'http://files.cod3r.com.br/curso-js/funcionarios.json'
 const axios = require('axios')
 
