@@ -4,14 +4,14 @@ console.log(valores[4])
 
 valores[4] = 10
 console.log(valores)
-console.log(valores.length)
+console.log(valores.length) //retorna comprimento da array
 
-valores.push({id: 3}, false, null, 'teste')
+valores.push({id: 3}, false, null, 'teste') //adiciona novos elementos no array
 console.log(valores)
 
-console.log(valores.pop())
+console.log(valores.pop()) //retira ultimo elemento do array
 
-delete valores[0]
+delete valores[0] //deleta um valor de um determinado elemento
 console.log(valores)
 
 console.log(typeof valores)

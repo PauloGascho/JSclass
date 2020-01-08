@@ -11,7 +11,7 @@ prod1["Desconto legal"] = 0.40 //evitar atributos com espaço
 
 console.log(prod1)
 
-//Criando objeto
+//Criando objeto (notação literal)
 const prod2 = {
     nome: 'Camisa Polo',
     preco: 19.50,
