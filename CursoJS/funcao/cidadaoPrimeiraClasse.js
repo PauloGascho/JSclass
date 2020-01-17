@@ -4,7 +4,6 @@
 // criando de forma literal
 function fun1(){ }
 
-
 // armazenando em variável
 const fun2 = function (){ }
 

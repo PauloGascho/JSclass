@@ -10,7 +10,7 @@ for (x in nums) {
 
 for (y in nums) {
     if (y == 5) {
-        continue // comando continue pula para o próximo índice 
+        continue // comando continue pula para o próximo índice (próxima repetição)
     }
     console.log(`${y} = ${nums[y]}`)
 }

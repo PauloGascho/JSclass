@@ -14,5 +14,5 @@ let ola = function () {
 }
 
 ola = () => 'Olá'
-ola = _ => 'Olá' // possui um param
+ola = _ => 'Olá' // possui um param ignorado
 console.log(ola())

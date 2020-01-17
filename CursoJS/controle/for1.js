@@ -9,6 +9,6 @@ for (let cont2 = 1; cont2 <= 10; cont2++) {
 }
 
 const notas = [6.7, 7.4, 9.0, 8.1, 7.7]
-for(i = 0; i < notas.length; i++) {
+for(let i = 0; i < notas.length; i++) {
     console.log(`nota = ${notas[i]}`)
 }
