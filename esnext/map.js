@@ -4,6 +4,7 @@ tecnologias.set('angular', { framework: true })
 
 console.log(tecnologias.react)
 console.log(tecnologias.get('react').framework)
+console.log(tecnologias.get('angular').framework)
 
 
 const chavesVariadas = new Map([
