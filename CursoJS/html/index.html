@@ -11,7 +11,8 @@
         Exercícios HTML
     </header>
     <nav>
-        <a href="exercicios/teste.html">00 - Teste</a>
+        <a href wm-nav="exercicios/teste.html">00 - Teste</a>
+        <a href wm-nav="exercicios/temp.html">01 - TEMP</a>
     </nav>
     <section id="conteudo"></section>   
     <footer>
@@ -20,12 +21,12 @@
     </footer>
     <script>
     
-        document.querySelectorAll('a').forEach(link => {
-            const conteudo = document.getElementById('conteúdo')
+        document.querySelectorAll('[wm-nav]').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
             
             link.onclick = function(e) {
                 e.preventDefault()
-                fetch(link.href)
+                fetch(link.getAttribute('wm-nav'))
                     .then(resp => resp.text())
                     .then(html => conteudo.innerHTML = html)
             }
